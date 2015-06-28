@@ -1,0 +1,79 @@
+html, body, .container, #csslayout{margin:0;padding:0;height:100%;}
+
+body {
+	background-color: darkgray;
+}
+
+h1 {
+	margin: 0 20px 0;
+	padding: 15px 0;
+	background-color: #DDDDDD;
+	font-weight: bold;
+}
+
+#csslayout {
+	background-color: lightcoral;
+	height: 30px;
+	margin: 0 20px;
+	padding: 3px;
+
+}
+
+ul {
+	margin: 0;
+}
+
+#csslayout ul li {
+	display: inline;
+	margin: 0 5px;
+  padding: none;
+
+}
+
+#col1 {
+	float: left;
+	width: 90%;
+	background-color: #9ACC99;
+	padding: 0 2%;
+	height: 100%;
+	margin-left: 20px;
+}
+
+#col2 {
+	float: right;
+	width: 30%;
+	margin-right: 20px;
+	background-color: #9999CD;
+	padding: 0 2%;
+	list-style-type: none;
+}
+
+.container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+    height: initial;
+    width: initial;
+    margin: initial;
+  }
+  #col1 {
+    width: 100%;
+    margin:0 10px;
+    
+  }
+  #col2 {
+    width: 100%;
+    margin: 0 10px;
+    }
+}
+
+#csslayout {
+  height: auto;
+}
